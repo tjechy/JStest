@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="cs-CZ">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>6tá JS - funkce</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+				/*document.write("<br />"); //-------------------------------
+				function pozdrav() 
+				{
+			        document.write("Ahoj, vřele tě tu vítám!");
+				}
+				pozdrav(); // zavolání funkce
+				*/
+				/*
+				document.write("<br />"); //-------------------------------
+				function pozdrav(jmeno) 
+				{
+			        return "Ahoj, vřele tě tu vítám "+jmeno+"!";
+				}
+				let text = pozdrav("Tome");
+				document.write(text);
+				document.write("<br />"+"<br />");
+				let text1 = pozdrav("Miloši");
+				document.write(text1);
+				*/
+				let promenna_s_funkci = function(jmeno) 
+					{
+		        	document.write("Ahoj, vřele tě tu vítám " + jmeno + "!");
+					}
+				
+				function zavolej_funkci(f, a) 
+					{
+		       		document.write("Jsem funkce a volám funkci, která mi přišla do parametru v proměnné.<br />");
+ 			   		document.write("Jako parametr jí dám jmeno, které mi přišlo jako 2. parametr.<br />");
+		       		f(a);
+					}
+				zavolej_funkci(promenna_s_funkci, "Tome");
+				
+				document.write("<br />"+"<br />");
+				let promenna_fce = function(jmeno) 
+					{
+		        	document.write("Ahoj, " + jmeno + "!");
+					}
+				zavolej_funkci(promenna_fce, "aaa");
+
+		</script>
+
+	</body>
+
+</html>

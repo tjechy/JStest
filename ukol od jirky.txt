@@ -1,0 +1,5 @@
+hele asi tak jedna z prvnich veci, co by jsi mohl vyzkouset
+napis program, ktery projde pole cisel
+do konzole program vypise modu, median, min, max
+a pole seradi od nejmensiho po nejvetsi
+serazene pole vypis do konzole

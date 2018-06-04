@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="cs-CZ">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>1ni webova aplikace v JavaScriptu</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+				let a = 20;
+				let b = 20;
+				let c = a + b;
+				document.write("Zde je součet čísel a + b: ");
+				document.write(c);
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				let s1 = "20";
+				let s2 = "20";
+				let s3 = s1 + s2;
+				document.write("Zde je součet řetězců s1 + s2: ");
+				document.write(s3);
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				let s4 = 10;
+				let s5 = 2;
+				let s6 = s4 / s5;
+				document.write("Zde je podíl s4 / s5: ");
+				document.write(s6);
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				let dr = new Date(); // vytvoří proměnnou, ve které je aktuální datum
+				document.write("Dnes je: "+ dr.getDate() + ". " + (dr.getMonth() + 1) + ". " + dr.getFullYear());
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write("Čas je: "+ dr.getHours() + ":" + (dr.getMinutes()));
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write("Od 1. 1. 1970: "+ dr.getTime());
+				
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				let x = "Mám rád znak \", protože se mi líbí.";
+				document.write(x);
+				
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				let y = "test znaků: bla \b bla";
+				document.write(y);
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write("funkce index - vypsani x-tého znaku v řetězci - 3tí: "+ y[2]); // vypíše čtvrtý znak
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write("funkce length: "+ y.length);
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				let e = "    jan novák  ";
+				e = e.trim(); // nejsem si jistý jestli mi to funguje!
+				document.write("funkce trim(): "+ e);
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				let f = "string";
+				document.write(f.toUpperCase()); // velké znaky
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write(f.toLowerCase()); // malé znaky
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				let v = 5.4568;
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write(v);
+				document.write(Math.round(v));
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write(Math.random());
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write(v.toPrecision(3));
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write(isNaN(v));
+				document.write("<br />"); // vložíme HTML tag pro nový řádek
+				document.write(isNaN(e));
+		</script>
+
+	</body>
+
+</html>

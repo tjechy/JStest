@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="cs-CZ">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>2há webova aplikace v JavaScriptu</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+				let x = 14;
+				let a = new Date();
+				if (a.getHours() >= x) 
+						document.write("Je PO "+x+"h.");
+				else
+						document.write("Je PŘED "+x+"h.");
+						
+				document.write("<br />"); //-------------------------------
+				if ((a.getHours() > 5) && (a.getHours() < 18))
+					document.write("DEN");
+				else
+					document.write("NOC");
+				
+				document.write("<br />"); //-------------------------------
+				let b = 1; // do a si přiřadíme na začátku 0
+					if (b == 0) // pokud je a 0, dáme do něj jedničku
+						b = 1;
+					else // pokud je a 1, dáme do něj nulu
+						b = 0;
+				document.write(b);
+				
+				document.write("<br />"); //-------------------------------
+				let rohliky = false;
+				let chleba = true;
+				document.write("rohliky: "+rohliky);
+				document.write("<br />"); //-------------------------------
+				document.write("chleba: "+chleba);
+				
+				document.write("<br />"); //-------------------------------
+				let avek = 15;
+				let zletilost = (avek>=18) ? "zletily":"nezletily";
+				document.write(zletilost);
+				
+				document.write("<br />"); //-------------------------------
+				document.write("<br />"); //-------------------------------
+				document.write("TEST PLNOLETOSTI");
+				document.write("<br />"); //-------------------------------
+				let vek = prompt("Zadej věk",12);
+				document.write((vek >= 18) ? "Jsi plnolety":"Nejsi plnolety");
+
+		</script>
+
+	</body>
+
+</html>
