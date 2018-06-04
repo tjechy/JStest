@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--suppress ALL -->
+<html lang="cs-CZ">
 <head>
     <meta charset="UTF-8">
     <title>9tá lekce</title>
 </head>
 <body>
+
 <p><br>Hello</br> world</p>
 <p><span>Hello</span> world</p>
+
+<form>
+    <input id="jedna" type="text"/>
+    <button>Odeslat</button>
+</form>
+
+<script type="text/javascript">
+    console.log(document.getElementById("jedna"))
+    console.log(firstChild(form));
+    let input = document.getElementById(jedna);
+        console.log(input.hasAttribute(type));
+</script>
+
 </body>
 </html>
