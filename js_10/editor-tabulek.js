@@ -1,6 +1,6 @@
 let tabulka;
 let vychoziVelikostX = 5;
-let vychoziVelikostY = 3;
+let vychoziVelikostY = 5;
 let aktivniBunka;
 
 function vytvorBunku() {
@@ -11,12 +11,11 @@ function vytvorBunku() {
     tdInput.type = "text";
     tdInput.onfocus = function () {
         aktivniBunka = this;
-    }
+    };
     td.appendChild(tdInput);
 
     return td;
 }
-
 function vytvorVychoziTabulku() {
     tabulka = document.createElement("table");
     document.body.appendChild(tabulka);
@@ -32,8 +31,7 @@ function vytvorVychoziTabulku() {
 window.onload = function () {
     vytvorVychoziTabulku();
     vytvorOvladaciTlacitko();
-}
-
+};
 function vytvorTlacitkoAVlozHo(popisek, rodic) {
     let btn = document.createElement("button");
     btn.textContent = popisek;
